@@ -1,1 +1,1 @@
-web: deno run --allow-net server.ts
+web: deno run --allow-env --allow-net server.ts
