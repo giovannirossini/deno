@@ -13,4 +13,4 @@ WORKDIR /app
 
 EXPOSE 3000
 
-CMD ["deno", "run", "--allow-net", "server.ts"]
+CMD ["deno", "run", "--allow-net", "--allow-env", "--allow-read", "--watch", "server.ts"]

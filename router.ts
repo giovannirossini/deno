@@ -3,15 +3,10 @@ import { getUsers, getUser, addUser, updateUser, deleteUser } from "./controller
 
 const router = new Router();
 
-router.get("/", (ctx) => {
-    ctx.response.body = "Hello Deno!";
-
-});
-
-router.get("/users", getUsers);
-router.get("/user/:id", getUser);
-router.post("/user", addUser);
-router.put("/user/:id", updateUser);
-router.delete("/user/:id", deleteUser);
+router.get("/", getUsers);
+router.get("/:id", getUser);
+router.post("/", addUser);
+router.put("/:id", updateUser);
+router.delete("/:id", deleteUser);
 
 export default router;
